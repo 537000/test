@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="请完善入库信息"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入物品名"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/xc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="X坐标"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/yc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Y坐标"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/zc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Z坐标"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ck"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/click3"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:background="#BDCE5C"
+            android:onClick="click3"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="确认入库" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ck"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/click2"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:background="#BDCE5C"
+            android:onClick="click2"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="我想重扫" />
+    </LinearLayout>
+
+</LinearLayout>
